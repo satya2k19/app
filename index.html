@@ -30,10 +30,10 @@ firebase.initializeApp(config);
 var messagesRef = firebase.database().ref('messages');
 
 // Listen for form submit
-document.getElementById('addCustomerForm').addEventListener('submit', submitForm);
+document.getElementById('addCustomerForm').addEventListener('submit', submit);
 
 // Submit form
-function submitForm(e){
+function submit(e){
   e.preventDefault();
 
   // Get values
